@@ -1,13 +1,36 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background-image: url("../images/textured_paper.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #fff;
 }
 
 nav {
     background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 
 h1 {
     background-color: #4aaaa5;
+    color: #fff;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+h3 {
+    background-color: #4aaaa5;
+    color: #ccc;
 }
 
 h1, h2 {
@@ -17,5 +40,48 @@ h1, h2 {
 p {
     color: #777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 0;
+    width: 920px;
+    justify-content: center;
+}
+
+footer {
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
+    margin-top: 40px;
+    background-color: darkgray;
+    color: #ccc;
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.card {
+    border: 1px solid #ddd;
+}
+
+.port-image {
+    height: 221px; 
+    width: 306px;
+}
+
+.port-title {
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.content {
+    width: 960px;
+    flex-grow: 2;
 }
 
